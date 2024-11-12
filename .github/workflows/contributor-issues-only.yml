@@ -1,0 +1,16 @@
+name: Non-Contributor Issue Closer
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: write
+jobs:
+  autoclose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close Issue
+        uses: jam1garner/contributors-only@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          comment: Sorry, we don't accept issues from non-contributors.
