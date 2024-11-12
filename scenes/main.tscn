@@ -9,7 +9,7 @@ sky_material = SubResource("ProceduralSkyMaterial_tn37f")
 background_mode = 2
 sky = SubResource("Sky_udgtw")
 
-[node name="Node3D" type="Node3D"]
+[node name="Root" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3wmge")
