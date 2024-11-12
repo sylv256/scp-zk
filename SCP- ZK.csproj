@@ -6,4 +6,18 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>SCPZK</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="addons\**" />
+    <Compile Remove="models\**" />
+    <Compile Remove="objects\**" />
+    <Compile Remove="scenes\**" />
+    <Compile Remove="textures\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="addons\**" />
+    <EmbeddedResource Remove="models\**" />
+    <EmbeddedResource Remove="objects\**" />
+    <EmbeddedResource Remove="scenes\**" />
+    <EmbeddedResource Remove="textures\**" />
+  </ItemGroup>
 </Project>
